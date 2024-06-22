@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="/static/img/me1.jpg" alt="George Dick" class="profile-pic">
+                <h1>George Dick</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="{% url 'about' %}">About Me</a></li>
+                    <li><a href="{% url 'projects_list' %}">Projects</a></li>
+                    <li><a href="experience">Experience</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <h2>Here is my footer</h2>
+</body>
+</html>

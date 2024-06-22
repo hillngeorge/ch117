@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me{% endblock %}
+{% load static %}
+{% block content %} 
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-photo">
+                <img src="{% static './img/me3.jpg' %}">
+            </div>
+            <div class="about-content">
+                <h2>George Dick</h2>
+                <h3>Field Service Electrician, Veteran</h3>
+                <p>
+                    My name is George Dick. I'm an Iraq war veteran who served in the army from 2006 to 2010. I was a forward observer and served in Baghdad, Iraq from 2007 to the end of 2009. I have a daughter and a son, and I've been married for 17 years. I love to fish and hunt, and my favorite pastime is music. I play guitar, bass, and some drums. Currently, I'm a field service electrician for Parkline. I live in Dickinson, TX.
+                </p>
+                <h4>Skills</h4>
+                <ul>
+                    <li>Coding: HTML, CSS, React, Django, Python</li>
+                    <li>Licensed Electrician</li>
+                    <li>High Voltage Distribution Systems</li>
+                    <li>Leadership</li>
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
